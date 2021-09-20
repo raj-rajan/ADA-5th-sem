@@ -1,0 +1,26 @@
+#include<iostream>
+#include<ostream>
+#include<cstring>
+
+using namespace std;
+
+ int fibonacci(int n)
+    {
+        if(n<=1)
+            return (n);
+        else
+            return ( fibonacci(n-1)+fibonacci(n-2) );
+    }
+int main()
+{
+    int N,FIBONACCI;
+    
+
+    cout<<"Enter a number :  ";
+    cin>>N;
+    FIBONACCI=fibonacci(N);
+    cout<<"\n"<<"Fibonacci of N is = "<<FIBONACCI;
+
+    return 0;
+
+}
